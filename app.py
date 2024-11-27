@@ -28,8 +28,8 @@ os.environ["LINKEDIN_SEARCH"] = st.secrets.get("LINKEDIN_JOB_SEARCH", "")
 
 # Page configuration
 st.set_page_config(layout="wide")
-st.title("GenAI Career Assistant - 👨‍💼")
-st.markdown("[Connect with me on LinkedIn](https://www.linkedin.com/in/aman-varyani-885725181/)")
+st.title("Student Multi-Functionality Hub - 👨‍💼")
+# st.markdown("[Connect with me on LinkedIn](https://www.linkedin.com/in/aman-varyani-885725181/)")
 
 streamlit_analytics.start_tracking()
 
@@ -115,17 +115,17 @@ st.sidebar.markdown(
     Any key provided will not be stored or shared it will be used only for the current session.
     """
 )
-st.sidebar.markdown(
-    """
-    <div style="padding:10px 0;">
-        If you like the project, give a 
-        <a href="https://github.com/amanv1906/GENAI-CareerAssistant-Multiagent" target="_blank" style="text-decoration:none;">
-            ⭐ on GitHub
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+# st.sidebar.markdown(
+#     """
+#     <div style="padding:10px 0;">
+#         If you like the project, give a 
+#         <a href="https://github.com/amanv1906/GENAI-CareerAssistant-Multiagent" target="_blank" style="text-decoration:none;">
+#             ⭐ on GitHub
+#         </a>
+#     </div>
+#     """,
+#     unsafe_allow_html=True,
+# )
 
 # Create the agent flow
 flow_graph = define_graph()
